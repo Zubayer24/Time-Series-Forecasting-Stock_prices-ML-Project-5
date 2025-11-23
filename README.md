@@ -41,11 +41,12 @@ Compared models with:
 - MAPE (Mean Absolute Percentage Error)
 -Included visual forecast comparisons
 
-# Project Structure
-├── Time-Series Forecasting – Stock Prices.ipynb          # Main notebook
-├── README.md                                             # Project documentation
-├── zomato_Stock_Prices.csv                               # Dataset
-└── Time-Series Forecasting – Stock Prices(SET-B).pdf     # Assessment instructions
+## Project Structure
+
+├── Time-Series Forecasting – Stock Prices.ipynb      # Main notebook
+├── README.md                                         # Project documentation
+├── zomato_Stock_Prices.csv                           # Dataset
+
 
 # Key Results
 📊 Model Performance Table:
@@ -83,14 +84,7 @@ Prophet’s trend component helps long-term investors and management understand 
 🔍 Model Reliability
 Rolling-window evaluation ensures the model is dependable when deployed in real-world trading systems.
 
-# Project Structure
-├── Time-Series Forecasting – Stock Prices.ipynb          # Main notebook
-├── README.md                                             # Project documentation
-├── zomato_Stock_Prices.csv                               # Dataset
-└── Time-Series Forecasting – Stock Prices(SET-B).pdf     # Assessment instructions
-
 # ⚙️ Technologies Used
-
 * Python 3.10+
 * pandas, numpy – Data handling & preprocessing
 * matplotlib, seaborn – Visualization
