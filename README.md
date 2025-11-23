@@ -1,16 +1,45 @@
 # 📈 Zomato Stock Price Forecasting (SET-B)
 
 # 🧠 Project Overview
-This project was completed as part of the DataSynthis ML Job Assessment (SET-B).
-The goal was to forecast Zomato’s future stock prices using time-series forecasting models and compare traditional statistical methods with modern machine learning techniques.
+The objective is to predict Zomato’s future stock prices using traditional statistical models and modern machine-learning forecasting methods, followed by model comparison and business impact analysis.
 
-# 🎯 Objectives
+# 🎯 Problem Summary (Business Context)
 
-1. Implement a traditional statistical model (ARIMA).
-2. Implement a machine learning model (Prophet).
-3. Evaluate both models using rolling window forecasting.
-4. Compare models using performance metrics (RMSE, MAPE).
-5. Discuss which model generalizes better.
+Accurate stock forecasting is essential for investment decisions, portfolio risk management, and financial planning. Even small price fluctuations influence trading strategies and investor sentiment.
+This project builds a predictive pipeline for Zomato’s stock, comparing ARIMA and Prophet models to determine which model provides more reliable short-term forecasts in real-world market environments.
+
+# What I Did (Approach)
+✅ Data Cleaning & Preprocessing
+
+- Loaded and parsed Zomato stock price dataset
+- Converted date column to datetime index
+- Handled missing/duplicate values
+- Checked stationarity with ADF test
+- Applied differencing for non-stationary behavior
+- Conducted trend & seasonality analysis
+
+✅ Feature Engineering
+
+- Lag-based transformations for ARIMA
+- Trend & seasonal components for Prophet
+
+✅ Model Development
+
+- ARIMA: Tuned (p, d, q) parameters using AIC
+- Prophet: Configured for additive trend & seasonality
+
+✅ Rolling Window Forecasting
+
+- Simulated real trading scenarios
+- Generated forecast for multiple rolling windows
+- Collected performance metrics for each iteration
+
+✅ Model Evaluation
+
+Compared models with:
+- RMSE (Root Mean Squared Error)
+- MAPE (Mean Absolute Percentage Error)
+-Included visual forecast comparisons
 
 # 📂 Project Structure
 │
