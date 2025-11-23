@@ -41,12 +41,18 @@ Compared models with:
 - MAPE (Mean Absolute Percentage Error)
 -Included visual forecast comparisons
 
+
+
+
+```md
 ## Project Structure
+
 
 ├── Time-Series Forecasting – Stock Prices.ipynb      # Main notebook
 ├── README.md                                         # Project documentation
 ├── zomato_Stock_Prices.csv                           # Dataset
 
+```
 
 # Key Results
 📊 Model Performance Table:
