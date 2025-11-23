@@ -1,4 +1,4 @@
-# 📈 Zomato Stock Price Forecasting (SET-B)
+# 📈 Zomato Stock Price Forecasting Using Machine Learning 
 
 # 🧠 Project Overview
 The objective is to predict Zomato’s future stock prices using traditional statistical models and modern machine-learning forecasting methods, followed by model comparison and business impact analysis.
@@ -41,12 +41,53 @@ Compared models with:
 - MAPE (Mean Absolute Percentage Error)
 -Included visual forecast comparisons
 
-# 📂 Project Structure
-│
-├── 📓 Time-Series Forecasting – Stock Prices.ipynb   # Main notebook
-├── 📄 Time-Series Forecasting – Stock Prices(SET-B).pdf  # Assessment instruction
-├── 📊 zomato_Stock_Prices.csv                        # Dataset used
-└── 📘 README.md                                      # Documentation
+# Project Structure
+├── Time-Series Forecasting – Stock Prices.ipynb          # Main notebook
+├── README.md                                             # Project documentation
+├── zomato_Stock_Prices.csv                               # Dataset
+└── Time-Series Forecasting – Stock Prices(SET-B).pdf     # Assessment instructions
+
+# Key Results
+📊 Model Performance Table:
+
+| Model     | RMSE       | MAPE        |
+| --------- | ---------- | ----------- |
+| **ARIMA** | **2.5433** | **2.5279%** |
+| Prophet   | 5.3216     | 6.1375%     |
+
+📈 Visual Outputs Included
+
+- Historical trend analysis
+- ARIMA forecast vs actual
+- Prophet forecast vs actual
+- Prophet trend/seasonality components
+- Rolling window performance plots
+
+📌 Interpretation
+
+- ARIMA outperformed Prophet with significantly lower error.
+- ARIMA captured short-term fluctuations more accurately.
+- Prophet provided smoother long-term trends but struggled with volatility.
+- Rolling window evaluation proved ARIMA’s better generalization.
+
+4. Business Impact
+💼 Improved Investment Decisions
+Short-term price forecasting helps traders optimize entry/exit timing.
+
+📉 Reduced Market Risk
+Accurate predictions reduce uncertainty and support risk-aware portfolio optimization.
+
+📊 Better Stakeholder Insights
+Prophet’s trend component helps long-term investors and management understand growth trajectory.
+
+🔍 Model Reliability
+Rolling-window evaluation ensures the model is dependable when deployed in real-world trading systems.
+
+# Project Structure
+├── Time-Series Forecasting – Stock Prices.ipynb          # Main notebook
+├── README.md                                             # Project documentation
+├── zomato_Stock_Prices.csv                               # Dataset
+└── Time-Series Forecasting – Stock Prices(SET-B).pdf     # Assessment instructions
 
 # ⚙️ Technologies Used
 
@@ -57,46 +98,10 @@ Compared models with:
 * prophet – Time-series forecasting
 * scikit-learn – Evaluation metrics
 
-# 🔍 Workflow Summary
-1. Data Preprocessing
-
-* Loaded the Zomato stock dataset and parsed Date and Close columns.
-* Handled missing values, checked stationarity, and applied differencing where needed.
-* Performed train-test split for rolling forecast evaluation.
-
-2. Model Development
-
-* ARIMA Model: Tuned (p, d, q) parameters using AIC minimization.
-* Prophet Model: Configured for trend and seasonality components.
-
-3. Evaluation Metrics
-
-The models were compared using RMSE (Root Mean Squared Error) and MAPE (Mean Absolute Percentage Error).
-| Model       | RMSE       | MAPE        |
-| ----------- | ---------- | ----------- |
-| **ARIMA**   | **2.5433** | **2.5279%** |
-| **Prophet** | **5.3216** | **6.1375%** |
-
-# 📊 Interpretation:
-
-* ARIMA achieved lower RMSE and MAPE, indicating higher accuracy for short-term prediction.
-* Prophet performed reasonably well but was slightly less precise for this dataset.
-
-# 📈 Visual Results
-
-* Trend Analysis Plot: Showed clear non-stationary upward movement.
-* ARIMA Forecast Plot: Captured short-term fluctuations accurately.
-* Prophet Forecast Plot: Modeled long-term trend and seasonal components.
-* Rolling Window Forecast: Demonstrated stable ARIMA performance over multiple periods.
-(All plots are available within the Jupyter notebook.)
-
-# 🗒️ Summary of Findings
-
-* The ARIMA model generalized better for Zomato’s short-term stock movements.
-* Prophet provided better interpretability but slightly higher forecast error.
-
-* Combining both approaches or extending with hybrid models (ARIMA-Prophet or LSTM) 
-could further improve accuracy in future iterations.
+# Summary of Findings
+- ARIMA is the optimal model for short-term Zomato stock forecasting.
+- Prophet provides valuable insights but has higher prediction error.
+- Hybrid and deep-learning approaches (ARIMA + Prophet or LSTM) could enhance future versions.
 
 👤 Author
 
